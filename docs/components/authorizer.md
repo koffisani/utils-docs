@@ -22,7 +22,7 @@ Configuring
 The value `roleField` is default set to `role_id`. This is the column / field to use of the user in the session (`$this->Auth->user()`). So if you are using another field to store the role's id, change it this way:
 
     // in your AppControllers initialize-method
-    $this->Manager->config('Authorizer.roleField', 'group_id');
+    $this->Authorizer->config('Authorizer.roleField', 'group_id');
 
 Before (CookBook)
 ------
